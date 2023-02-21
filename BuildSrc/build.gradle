@@ -2,6 +2,8 @@ apply plugin: 'groovy'
 apply plugin: 'java-library'
 
 dependencies {
-    api gradleApi()//gradle sdk
-    api localGroovy()//groovy sdk
+    //gradle sdk
+    api gradleApi()
+    //groovy sdk
+    api localGroovy()
 }

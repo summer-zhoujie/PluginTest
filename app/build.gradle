@@ -1,18 +1,18 @@
-//buildscript {
-//    repositories {
-//        maven { url '../mylibrary/build/repo' }
-//    }
-//    dependencies {
-//        classpath 'summer.placeholder:MyPlugin:1.0.0'
-//    }
-//}
+buildscript {
+    repositories {
+        maven { url '../mylibrary/repo' }
+    }
+    dependencies {
+        classpath 'summer.placeholder:MyPlugin:1.0.0'
+    }
+}
 
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
-
-//apply plugin: 'summer.place'
+apply plugin: 'summer.place'
+apply plugin: summer.placeholder.MySecondPlugin
 
 android {
     namespace 'com.summer.myapplication'
